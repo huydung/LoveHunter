@@ -1,0 +1,68 @@
+body {
+  background:#200403 url('bg2.jpg') no-repeat 50% 50px;
+  padding:0;margin:0;overflow:hidden;
+}
+div, p{
+  font: 12px "Palatino linotype", serif;
+}
+.description{font:italic 12px Tahoma, sans-serif;}
+.container{
+  margin: 0 auto; width: 980px; overflow:hidden;
+}
+.clearfix{
+  display:block;
+}
+.clearfix:after{
+  content:"";
+  display:block;
+  clear:both;
+  width:100%; height: 0;
+  visibility: hidden;
+}
+.column{
+  width:50%;margin:0;padding:0;float:left;
+}
+.fright{float:right; text-align: right;}
+.column ol,.column ul{
+  padding-left: 5em;
+  margin: 1.8em 0 0 3em;
+  line-height: 1.8em;
+  font-size:14px;
+  
+}
+.column p{
+  margin-left: 1em;
+}
+#body{
+  height:460px;
+}
+#map_column{
+  position: relative;
+}
+#map_canvas{
+  background: #FF80FF;
+  margin: 20px auto 0;
+  width:400px;height:400px;
+}
+ol .locked{
+  list-style: url('lock.png');
+  opacity: 0.5;
+}
+ol .unlocked{
+  list-style: url('heart_small.png');
+  opacity: 1;
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+  cursor: hand;
+}
+#header, footer{
+  color: #CCC;
+  height:140px;  
+}
+footer{
+  text-align:center;
+  color: #CCC;
+}
+#heart_status{
+display:block;text-align:center;}
